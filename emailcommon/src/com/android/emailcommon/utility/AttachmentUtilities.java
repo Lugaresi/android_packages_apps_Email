@@ -107,10 +107,6 @@ public class AttachmentUtilities {
      */
     public static final String[] UNACCEPTABLE_ATTACHMENT_EXTENSIONS = new String[] {
         // File types that contain malware
-        "ade", "adp", "bat", "chm", "cmd", "com", "cpl", "dll", "exe",
-        "hta", "ins", "isp", "jse", "lib", "mde", "msc", "msp",
-        "mst", "pif", "scr", "sct", "shb", "sys", "vb", "vbe",
-        "vbs", "vxd", "wsc", "wsf", "wsh",
     };
     /**
      * Filename extensions of attachments that can be installed.
@@ -126,14 +122,14 @@ public class AttachmentUtilities {
      * so we should probably factor that in. A 5MB attachment will generally be around
      * 6.8MB downloaded but only 5MB saved.
      */
-    public static final int MAX_ATTACHMENT_DOWNLOAD_SIZE = (5 * 1024 * 1024);
+    public static final int MAX_ATTACHMENT_DOWNLOAD_SIZE = (500 * 1024 * 1408);
     /**
      * The maximum size of an attachment we're willing to upload (measured as stored on disk).
      * Attachments that are base64 encoded (most) will be about 1.375x their actual size
      * so we should probably factor that in. A 5MB attachment will generally be around
      * 6.8MB uploaded.
      */
-    public static final int MAX_ATTACHMENT_UPLOAD_SIZE = (5 * 1024 * 1024);
+    public static final int MAX_ATTACHMENT_UPLOAD_SIZE = (100 * 1024 * 1408);
 
     private static Uri sUri;
     public static Uri getAttachmentUri(long accountId, long id) {
