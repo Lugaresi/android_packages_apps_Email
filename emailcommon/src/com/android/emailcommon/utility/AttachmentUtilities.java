@@ -106,7 +106,6 @@ public class AttachmentUtilities {
      * be lower case, and should not include a "."
      */
     public static final String[] UNACCEPTABLE_ATTACHMENT_EXTENSIONS = new String[] {
-        // File types that contain malware
     };
     /**
      * Filename extensions of attachments that can be installed.
