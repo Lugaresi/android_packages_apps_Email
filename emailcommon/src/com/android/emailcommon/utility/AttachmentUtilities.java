@@ -106,14 +106,6 @@ public class AttachmentUtilities {
      * be lower case, and should not include a "."
      */
     public static final String[] UNACCEPTABLE_ATTACHMENT_EXTENSIONS = new String[] {
-<<<<<<< HEAD
-        // File types that contain malware
-        "ade", "adp", "bat", "chm", "cmd", "com", "cpl", "dll", "exe",
-        "hta", "ins", "isp", "jse", "lib", "mde", "msc", "msp",
-        "mst", "pif", "scr", "sct", "shb", "sys", "vb", "vbe",
-        "vbs", "vxd", "wsc", "wsf", "wsh",
-=======
->>>>>>> 0e43f68f5... Unblock attachment types, as usual.
     };
     /**
      * Filename extensions of attachments that can be installed.
